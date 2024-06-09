@@ -41,16 +41,12 @@ body {
     font-size: 16px;
     vertical-align: middle;
     text-align: center;
-    background-color: #1e1a1e;
-    color: #6d5f6d;
+    background-color: #ff0000;
+    color: #ffffff;
     box-shadow: rgba(255, 255, 255, 0.2) 0px -5px  17px;
     position: relative;
     z-index: 300;
 
-}
-
-.header-text span {
-    color: #d03252;
 }
 
 img {
@@ -146,6 +142,10 @@ ul > li{
     background-color: #af06ad;
 }
 
+.call-to-action-btn.lg {
+    margin-top: 30px;
+}
+
 .highlight-1, .highlight-2{
     font-weight: 600;
 }
@@ -199,16 +199,20 @@ ul > li{
     color: #d03252;
 }
 
-.method-desc {    
+.method-desc, .last-call-to-action-wrapper {    
     width: 118%;
     padding: 8% 4%;
     transform: translate(-10%, 0);
-    background-color: d4e9ff;
+    background-color: #d4e9ff;
     font-weight: bold;
     color: #705ED8ff;
     font-size: 30px;
     text-align: center;
     margin-top: 20px;
+}
+
+.discount-wrapper .highlight-2 {
+    font-weight: inherit;
 }
 
 .method-aux-text {
@@ -357,8 +361,18 @@ ul > li{
     }
 }
 
-.creator-info-subtitle ul li {
+.creator-info-subtitle {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #af06ad;
+    background-color: thistle;
+}
+
+.creator-info-subtitle li  {
     
+    color: black;
 }
 
 .img-bg {
@@ -366,7 +380,7 @@ ul > li{
     padding: 35px 4%;
     transform: translate(-10%, 0);
     color: white;
-    background: url("/assets/bg-img.png");
+    background: url("assets/bg-img.png");
     background-size: cover;
     background-position-y: center;
 }
@@ -490,4 +504,94 @@ a, a:visited, a:hover {
     -ms-transition: all .6s ease;
     -o-transition: all .6s ease;
     transition: all .6s ease;
+}
+
+.width-50pct {
+    max-width: unset;
+    width: 50%;
+}
+
+.countdown-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 3000;
+}
+
+.countdown-btn .material-icons{
+    vertical-align: middle;
+}
+
+.opportunitty {
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.discount-info-wrapper {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    margin: 25px auto 30px auto;
+}
+
+.discount-info-box {
+    background-color: #1d1e1f;
+    border-radius: 20px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #575757;
+}
+
+.discount-info-box span {
+    text-decoration: line-through;
+    color: red;
+    font-weight: 600;
+}
+
+.price-label {
+    color: rgb(0, 218, 0);
+    font-weight: 600;
+}
+
+.last-call-to-action-wrapper, .vagas-info, .discount-wrapper {
+    background-color: #1d1e1f;
+}
+
+.pricing, .limited-info, .investment {
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    text-align: center;
+}
+
+.investment .highlight-2 {
+    font-weight: 500;
+}
+
+.vagas-info, .discount-wrapper {
+    color: rgb(255, 255, 255);
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    padding: 8% 4%;
+    border-radius: 50px;
+}
+
+.mentoria-pricing {
+    margin: 40px 0;
+    font-weight: 200;
+    text-align: center;
+    font-size: 30px;
 }
