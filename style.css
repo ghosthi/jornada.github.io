@@ -540,6 +540,7 @@ a, a:visited, a:hover {
 }
 
 .discount-info-box {
+    text-align: left;
     background-color: #1d1e1f;
     border-radius: 20px;
     margin: 10px 0;
