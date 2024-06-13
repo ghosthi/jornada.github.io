@@ -511,6 +511,14 @@ a, a:visited, a:hover {
     width: 50%;
 }
 
+.course-desc-2-wrapper.width-50pct > ul {
+    margin: 35px 0;
+}
+.course-desc-2-wrapper.width-50pct > ul > li {
+    text-align: center;
+    font
+}
+
 .countdown-btn {
     position: fixed;
     bottom: 15px;

@@ -7,13 +7,6 @@
         if(isVisible)
             content.animate({height: content.get(0).scrollHeight},5);
     });
-    
-    let data = new Date();
-    $(".header-text > span").html(
-        (data.getDate() - 2) + ", " + (data.getDate() - 1) + " e " + data.getDate() + " de " + 
-        ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"][data.getMonth()]
-    );
-    
 });
 
 function startTimer(duration, display) {
